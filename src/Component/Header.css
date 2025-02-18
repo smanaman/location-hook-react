@@ -1,0 +1,34 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #0d0e0f;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-weight: 600;
+}
+
+.navbar a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color */
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    color: #007bff; /* Change color on hover */
+}
