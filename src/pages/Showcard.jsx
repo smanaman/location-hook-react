@@ -6,7 +6,11 @@ import { useNavigate } from 'react-router-dom'
 function Showcard() {
   const [showdata, setshowdata] = useState(JSON.parse(localStorage.getItem('formdata')))
   const nav = useNavigate()
-
+const del=(id)=>{
+const delet=showdata.filter(val=>val.id!=id)
+setshowdata(delet)
+localStorage.setItem('formdata',JSON.stringify(delet))
+}
   return (
     <>
       <Header />
@@ -19,6 +23,8 @@ function Showcard() {
             <p className="card-description">{val.Description}</p>
             <p className="card-price">{val.price}</p>
             <button className="edit-button" onClick={() => nav('/edit', { state: val })}>Edit</button>
+            <button className="edit-button" onClick={()=>del(val?.id)}>Delet</button>
+
           </div>
         ))
       }
