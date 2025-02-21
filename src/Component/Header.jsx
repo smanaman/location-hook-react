@@ -14,13 +14,13 @@ function Header() {
                         <Link to='/'>Home</Link>
                     </li>
                     <li>
-                        <Link to='/about'>About</Link>
+                        <Link to='/login'>Login</Link>
                     </li>
                     <li>
                         <Link to='/form'>Form</Link>
                     </li>
                     <li>
-                        <Link to='/contanct'>Contact</Link>
+                        <Link to='/register'>Register</Link>
                     </li>
                     <li>
                         <Link to='/showcard'>Showcard</Link>
